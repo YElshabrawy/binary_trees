@@ -7,14 +7,15 @@
  *
  * Return: Description of the return value
  */
-binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value){
-	binary_tree_t* t;
+binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
+{
+	binary_tree_t *t;
 	int tmp;
 
 	if (!parent)
 		return (NULL);
 
-	if(!parent->left)
+	if (!parent->left)
 	{
 		t = binary_tree_node(parent, value);
 		parent->left = t;
@@ -27,5 +28,5 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value){
 	tmp = parent->left->left->n;
 	parent->left->left->n = parent->left->n;
 	parent->left->n = tmp;
-	return(t);
+	return (t);
 }
