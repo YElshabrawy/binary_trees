@@ -3,7 +3,7 @@
 /**
  * binary_tree_preorder - Description of the function
  * @tree: Description of the 'tree' parameter
- * @(*func: Description of the '(*func' parameter
+ * @func: Description of the 'func' parameter
  *
  * Return: Description of the return value
  */
